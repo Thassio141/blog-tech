@@ -20,3 +20,6 @@ def hello(request):
             return render(request, 'hello_azure/hello.html', context)
     else:
         return redirect('index')
+    
+def blog(request):
+    return render(request, 'hello_azure/blog.html')
